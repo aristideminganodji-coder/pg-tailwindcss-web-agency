@@ -163,6 +163,18 @@
   }
 }
 @layer utilities {
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .ml-10 {
+    margin-left: calc(var(--spacing) * 10);
+  }
+  .ml-\[5rem\] {
+    margin-left: 5rem;
+  }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
   }
@@ -176,11 +188,30 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+  .border-\[\#1BC8D3\] {
+    border-color: #1BC8D3;
+  }
   .bg-teal-300 {
     background-color: var(--color-teal-300);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .text-\[\#1BC8D3\] {
+    color: #1BC8D3;
+  }
+  .text-\[\#1BC8\] {
+    color: #1BC8;
+  }
+  .text-\[\#\] {
+    color: #;
   }
   .underline {
     text-decoration-line: underline;
@@ -188,6 +219,21 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  @media (hover: hover) {
+    .hover\:border-b-2:hover {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 2px;
+    }
+    .hover\:border-\[\#1BC8D3\]:hover {
+      border-color: #1BC8D3;
+    }
+    .hover\:pb-2:hover {
+      padding-bottom: calc(var(--spacing) * 2);
+    }
+    .hover\:text-\[\#1BC8D3\]:hover {
+      color: #1BC8D3;
+    }
   }
 }
 @property --tw-border-style {
