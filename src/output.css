@@ -176,6 +176,15 @@
   }
 }
 @layer utilities {
+  .relative {
+    position: relative;
+  }
+  .top-10 {
+    top: calc(var(--spacing) * 10);
+  }
+  .left-20 {
+    left: calc(var(--spacing) * 20);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -191,6 +200,9 @@
   .mt-28 {
     margin-top: calc(var(--spacing) * 28);
   }
+  .mt-50 {
+    margin-top: calc(var(--spacing) * 50);
+  }
   .mt-\[10rem\] {
     margin-top: 10rem;
   }
@@ -205,6 +217,9 @@
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
+  }
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
   }
   .ml-6 {
     margin-left: calc(var(--spacing) * 6);
@@ -230,6 +245,9 @@
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
+  .w-\[300px\] {
+    width: 300px;
+  }
   .w-\[500px\] {
     width: 500px;
   }
@@ -241,6 +259,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -269,6 +290,9 @@
   .border-black {
     border-color: var(--color-black);
   }
+  .bg-\[\#1BC8C3\] {
+    background-color: #1BC8C3;
+  }
   .bg-\[\#1BC8D3\] {
     background-color: #1BC8D3;
   }
@@ -277,6 +301,15 @@
   }
   .bg-\[\#1BC8D3\]\/50 {
     background-color: color-mix(in oklab, #1BC8D3 50%, transparent);
+  }
+  .bg-\[\#29A\] {
+    background-color: #29A;
+  }
+  .bg-\[\#29\] {
+    background-color: #29;
+  }
+  .bg-\[\#292A2B\] {
+    background-color: #292A2B;
   }
   .bg-teal-300 {
     background-color: var(--color-teal-300);
@@ -379,8 +412,17 @@
     .sm\:mt-\[6rem\] {
       margin-top: 6rem;
     }
+    .sm\:h-auto {
+      height: auto;
+    }
+    .sm\:w-auto {
+      width: auto;
+    }
     .sm\:flex-col {
       flex-direction: column;
+    }
+    .sm\:flex-wrap {
+      flex-wrap: wrap;
     }
     .sm\:text-center {
       text-align: center;
@@ -390,11 +432,20 @@
     .md\:mt-0 {
       margin-top: 0px;
     }
+    .md\:h-\[40rem\] {
+      height: 40rem;
+    }
+    .md\:w-60 {
+      width: calc(var(--spacing) * 60);
+    }
     .md\:flex-col {
       flex-direction: column;
     }
     .md\:flex-row {
       flex-direction: row;
+    }
+    .md\:flex-nowrap {
+      flex-wrap: nowrap;
     }
     .md\:text-left {
       text-align: left;
